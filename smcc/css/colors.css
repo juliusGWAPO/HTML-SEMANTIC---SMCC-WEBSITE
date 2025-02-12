@@ -1,0 +1,122 @@
+.bg-darkblue {
+    background-color: #050045;
+  }
+  
+  .bg-orange {
+    background-color: #ffc107;
+  }
+  
+  .bg-transparent {
+    background-color: transparent;
+  }
+  
+  .fg-orange {
+    color: #ffc107;
+  }
+  
+  .fg-darkblue {
+    color: #050045;
+  }
+  
+  .divider {
+    border-top: 2px solid grey;
+  }
+  
+  .divider-orange {
+    border-top: 5px solid #ffc107;
+  }
+  
+  .divider-orange-vertical-left {
+    border-left: 5px solid #ffc107;
+  }
+  
+  .divider-orange-vertical-right {
+    border-right: 5px solid #ffc107;
+  }
+  
+  .divider-darkblue {
+    border-top: 5px solid #050045;
+  }
+  
+  .radial-gradient-orange {
+    background-image: radial-gradient(circle, #ffc107, transparent);
+  }
+  
+  .radial-gradient-dark {
+    background-image: radial-gradient(circle, black, transparent);
+  }
+  
+  .zoom {
+    transition: transform 0.3s ease;
+    /* box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18); */
+    border-radius: 0;
+    border: 0;
+    /* margin-bottom: 1.5em; */
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1);
+  }
+  
+  /* .carousel .carousel-indicators li {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+  } */
+  
+  .carousel .carousel-indicators li.active {
+    background-color: #ffc107;
+  }
+  
+  .custom-carousel-indicators {
+    color: #ffc107;
+  }
+  
+  .page-item .page-link {
+    background-color: #050045;
+    color: #ffc107;
+  }
+  
+  .active-page .page-link {
+    color: #050045;
+    background-color: #ffc107;
+    font-weight: bold;
+  }
+  
+  .disabled-page .page-link {
+    color: #050045;
+    background-color: #ffc107;
+    font-weight: bold;
+  }
+  
+  .page-item .page-link:hover {
+    color: #050045;
+    background-color: #ffc107;
+    transition: 0.5s;
+    font-weight: bold;
+  }
+  
+  .color-danger {
+    color: #dc3545;
+  }
+  
+  .color-light {
+    color: #f8f9fa;
+  }
+  
+  .color-primary {
+    color: #007bff;
+  }
+  
+  .color-success {
+    color: #28a745;
+  }
+  
+  .color-danger:hover,
+  .color-light:hover,
+  .color-primary:hover,
+  .color-success:hover {
+    color: #ffc107;
+    transition: 0.5s;
+  }
+  

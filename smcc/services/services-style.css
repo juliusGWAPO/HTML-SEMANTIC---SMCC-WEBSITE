@@ -1,0 +1,753 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;   
+    outline: none;
+    scroll-behavior: smooth;
+}
+body {
+    position: relative;
+    background-attachment: fixed;
+    background-image: url(/smcc/images/smcc-bg\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.95;
+}
+
+html {
+    height: 100%;
+    z-index: 5;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container-fluid .card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 100vw;
+    transition: 0.4s all ease-in-out;
+    overflow: hidden;
+}
+
+
+
+.addmission-contact {
+    color: white;
+}
+.addmission-contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addmission-contact-box {
+    margin-top: 28px;
+    background-color: #050045;
+    color: white;
+    min-height: 350px;
+    max-height: 550px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.addmission-contact-box .addmission-contact-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 600px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 5rem;
+}
+.addmission-contact-info h4 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #ffc107;
+    margin-bottom: 32px;
+}
+.addmission-contact-info ul li{
+    font-size: 0.8rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+}
+.addmission-contact-info p, .addmission-contact-info p a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+    color: #ffc107;
+}
+.addmission-contact-info .a-r-p {
+    color: #fff;
+}
+
+
+.requirements-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.requirements-box {
+    margin-bottom: 48px;
+    background-color: #050045;
+    color: white;
+    min-height: 200px;
+    max-height: 550px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.requirements-box .requirements-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 600px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 5rem;
+}
+.requirements-info h4 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #ffc107;
+    margin-bottom: 32px;
+}
+.requirements-info p, .requirements-info p a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+    color: #ffffff;
+}
+
+
+
+.admission-requirements-box {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.admission-requirements .heading {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.9rem;
+}
+.admission-requirements .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+.admission-requirements-item {
+    min-height: 550px;
+    max-width: 450px;
+    background: #050045;
+    border-radius: 12px;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    line-height: 2;
+    gap: 1rem;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+.admission-requirements-item:nth-child(4) {
+    height: 68px;
+}
+.admission-requirements-item:hover {
+    border: 3px solid var(--main-color);
+    transform: translateY(10px)scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
+}
+.admission-requirements-item h2 span {
+    color: #ffc107;
+    font-size: 1.8rem;
+}
+
+.admission-requirements-item h3 {
+    color: #ffc107;
+    font-size: 1.rem;
+    border-bottom: 5px solid darkgrey;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.admission-requirements-item .admission-requirements-info {
+    display: flex;
+    border-bottom: 3px solid darkgrey;
+    padding-bottom: 12px;
+}
+
+.admission-requirements-item .name-c {
+    font-size: 1.3rem;
+    text-align: left;
+    color: #ffc107;
+}
+.admission-requirements-item p {
+    font-size: 1rem;
+}
+
+.admission-requirements-item .admission-requirements-info-fix {
+    display: flex;
+    gap: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 3px solid darkgrey;
+    padding-bottom: 12px;
+}
+
+
+
+.scholarship-grants-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scholarship-grants-box {
+    margin-top: 56px;
+    margin-bottom: 56px;
+    background-color: #050045;
+    color: white;
+    min-height: 200px;
+    max-height: 550px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.scholarship-grants-box .scholarship-grants-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 19rem 0rem 19rem ;
+}
+.scholarship-grants-info h4 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #ffc107;
+    margin-bottom: 32px;
+}
+
+
+.s-g-box {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.s-g .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+}
+.s-g-item {
+    min-height: 550px;
+    max-width: 450px;
+    background: #050045;
+    border-radius: 12px;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    line-height: 2;
+    gap: 1rem;
+    color: white;
+    transition: 0.4s ease-in-out;
+    margin-bottom: 45px;
+}
+.s-g-item:hover {
+    border: 3px solid var(--main-color);
+    transform: translateY(10px)scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
+}
+.s-g-item .s-g-info {
+    display: flex;
+    border-bottom: 3px solid darkgrey;
+    padding-bottom: 12px;
+}
+.s-g-item p {
+    font-size: 1rem;
+}
+
+.auxiliary-services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.auxiliary-services-box {
+    margin-top: 56px;
+    margin-bottom: 56px;
+    background-color: #050045;
+    color: white;
+    min-height: 200px;
+    max-height: 550px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.auxiliary-services-box .auxiliary-services-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 19rem 0rem 19rem ;
+}
+.auxiliary-services-info h4 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #ffc107;
+    margin-bottom: 32px;
+}
+
+.auxiliary-offered-box {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.auxiliary-offered .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+}
+.auxiliary-offered-item {
+    min-height: 550px;
+    max-width: 450px;
+    background: #050045;
+    border-radius: 12px;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    line-height: 2;
+    gap: 1rem;
+    color: white;
+    transition: 0.4s ease-in-out;
+    margin-bottom: 45px;
+}
+.auxiliary-offered-item:hover {
+    border: 3px solid var(--main-color);
+    transform: translateY(10px)scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
+}
+.auxiliary-offered-item .s-g-info {
+    display: flex;
+    border-bottom: 3px solid darkgrey;
+    padding-bottom: 12px;
+}
+.auxiliary-offered-item h2 {
+    color: #ffc107;
+    font-size: 1.5rem;
+}
+.auxiliary-offered-item ul li {
+    font-weight: 500;
+}
+.auxiliary-offered-item p {
+    font-size: 1rem;
+}
+
+.guidance-contact {
+    color: white;
+}
+.guidance-contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.guidance-contact-box {
+    margin-top: 28px;
+    background-color: #050045;
+    color: white;
+    min-height: 350px;
+    max-height: 550px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.guidance-contact-box .guidance-contact-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 600px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 5rem;
+}
+.guidance-contact-info h4 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #ffc107;
+    margin-bottom: 32px;
+}
+.guidance-contact-info ul li{
+    font-size: 0.8rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+}
+.guidance-contact-info p, .guidance-contact-info p a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+    color: #ffc107;
+}
+
+.guidance-services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.guidance-services-box {
+    margin-bottom: 48px;
+    background-color: #050045;
+    color: white;
+    min-height: 200px;
+    max-height: 550px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.guidance-services-box .guidance-services-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-height: 600px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 5rem;
+}
+.guidance-services-info h4 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #ffc107;
+    margin-bottom: 32px;
+    margin: auto;
+    padding-bottom: 22px;
+}
+.guidance-services-info p, .guidance-services-info p a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+    color: #ffffff;
+}
+
+
+.guidance-info-box {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.guidance-info .heading {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.9rem;
+}
+.guidance-info .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+.guidance-info-item {
+    min-height: 550px;
+    max-width: 450px;
+    background: #050045;
+    border-radius: 12px;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    line-height: 2;
+    gap: 1rem;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+.guidance-info-item:hover {
+    border: 3px solid var(--main-color);
+    transform: translateY(10px)scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
+}
+.guidance-info-item h2 span {
+    color: #ffc107;
+    font-size: 1.8rem;
+}
+
+.guidance-info-item h2 {
+    color: #ffc107;
+    font-size: 1.8rem;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.health-services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.health-services-box {
+    margin-top: 56px;
+    margin-bottom: 56px;
+    background-color: #050045;
+    color: white;
+    min-height: 200px;
+    max-height: 550px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.health-services-box .health-services-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 19rem 0rem 19rem ;
+}
+.health-services-info h4 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #ffc107;
+    margin-bottom: 32px;
+}
+
+.health-info-box {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.health-info .heading {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.9rem;
+}
+.health-info .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+}
+.health-info-item {
+    min-height: 550px;
+    max-width: 450px;
+    background: #050045;
+    border-radius: 12px;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    line-height: 2;
+    gap: 1rem;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+.health-info-item:hover {
+    border: 3px solid var(--main-color);
+    transform: translateY(10px)scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
+}
+.health-info-item h2 span {
+    color: #ffc107;
+    font-size: 1.8rem;
+}
+
+.health-info-item h2 {
+    color: #ffc107;
+    font-size: 1.8rem;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 8px 0;
+    background-color: #050045;
+    border-top: 7px solid #ffc107;
+    margin-top: 34px;
+}
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer ul li img {
+    width: 46px;
+}
+.footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+}
+
+@media(max-width:1366px) {
+    .admission-requirements .wrapper, .guidance-info .wrapper{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    .s-g .wrapper {
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
+
+@media(max-width:1285px) {
+    .addmission-contact-container, .requirements-container, .scholarship-grants-container{
+        padding-bottom: 7rem;
+        margin: 0 5rem;
+    }
+    .auxiliary-services-container, .guidance-contact-container, .guidance-services-container, .health-services-container {
+        padding-bottom: 7rem;
+        margin: 0 5rem;
+    }
+}
+@media(max-width:1053px) {
+    .addmission-contact, .guidance-contact {
+        padding-bottom: 7rem;
+    }
+    .addmission-contact-info ul li, .guidance-contact-info{
+        font-size: 0.9rem;
+    }
+    .addmission-contact-info p{
+        font-size: 0.7rem;
+    }
+    .requirements, .guidance-services {
+        padding-bottom: 7rem;
+    }
+    .requirements-info ul li{
+        font-size: 0.9rem;
+    }
+    .requirements-info p, .guidance-services-info p{
+        font-size: 0.7rem;
+    }
+    .scholarship-grants{
+        padding-bottom: 7rem;
+    }
+    .scholarship-grants-info ul li{
+        font-size: 0.9rem;
+    }
+    .auxiliary-services, .health-services {
+        padding-bottom: 6rem;
+    }
+    .auxiliary-services-info ul li{
+        font-size: 0.9rem;
+    }
+}
+@media(max-width:991px) {
+    .admission-requirements .wrapper, .guidance-info .wrapper, .health-info .wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .s-g .wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+@media(max-width:895px) {
+    .addmission-contact h2 {
+        margin-bottom: 3rem;
+    }
+    .addmission-contact-container, .guidance-contact-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .requirements h2 {
+        margin-bottom: 3rem;
+    }
+    .requirements-container, .guidance-services-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .scholarship-grants{
+        margin-bottom: 3rem;
+    }
+    .auxiliary-services, .health-services {
+        margin-bottom: 3rem;
+        padding-bottom: 5rem;
+        margin: 0 3.2rem;
+    }
+    .scholarship-grants-container, .auxiliary-services-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media(max-width:726px) {
+    .scholarship-grants-box .scholarship-grants-info {
+        padding: 5rem 12rem 0rem 12rem ;
+    }
+    .auxiliary-services-box .auxiliary-services-info, .health-services-box .health-services-info {
+        padding: 5rem 12rem 0rem 12rem ;
+    }
+
+}
+
+@media(max-width:518px) {
+    .addmission-contact-container, .requirements-container, .scholarship-grants-container, .guidance-contact-container, .guidance-services-container {
+        padding-bottom: 4rem;
+        margin: 0 2rem;
+    }
+    .addmission-contact h2, .requirements h2, .scholarship-grants h4, .guidance-contact h4, .guidance-info h2 {
+        margin-bottom: 1.4rem;
+    }
+    .admission-requirements .wrapper, .s-g .wrapper, .guidance-info .wrapper, .health-info .wrapper {
+        gap: 0.8rem;
+    }
+}

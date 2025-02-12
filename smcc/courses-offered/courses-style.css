@@ -1,0 +1,161 @@
+body {
+    position: relative;
+    background-attachment: fixed;
+    background-image: url(/smcc/images/smcc-bg\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.95;
+}
+
+html {
+    height: 100%;
+    z-index: 5;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.courses-box {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.courses .heading {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.9rem;
+}
+.courses-box img {
+    width: 15rem;
+    border-radius: 30%;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+.course-item {
+    min-height: 550px;
+    max-width: 450px;
+    background: #050045;
+    border-radius: 12px;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+.course-item:nth-child(4), .course-item:nth-child(5) {
+    height: 130px;
+}
+.course-item:hover {
+    border: 3px solid var(--main-color);
+    transform: translateY(10px)scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
+}
+.course-item h2 {
+    color: #ffc107;
+    font-size: 1.8rem;
+}
+
+.course-item h3 {
+    color: #ffc107;
+    font-size: 1.rem;
+    border-bottom: 5px solid darkgrey;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.course-item .course-info {
+    display: flex;
+    border-bottom: 3px solid darkgrey;
+    padding-bottom: 12px;
+}
+
+.course-item .name-c {
+    font-size: 1.3rem;
+    text-align: left;
+    color: #ffc107;
+}
+.course-item p {
+    font-size: 1rem;
+}
+
+.course-item .course-info-fix {
+    display: flex;
+    gap: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 3px solid darkgrey;
+    padding-bottom: 12px;
+}
+
+.course-item .major {
+    color: #ffc107;
+}
+
+
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 8px 0;
+    background-color: #050045;
+    border-top: 7px solid #ffc107;
+    margin-top: 24px;
+}
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer ul li img {
+    width: 46px;
+}
+.footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+}
+
+
+
+@media(max-width:1366px) {
+    .courses .wrapper {
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+
+@media(max-width:991px) {
+    section {
+        padding: 10rem 3% 2rem;
+    }
+    .courses .wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+

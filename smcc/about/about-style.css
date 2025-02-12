@@ -1,0 +1,54 @@
+body {
+    position: relative;
+    background-attachment: fixed;
+    background-image: url(/smcc/images/smcc-bg\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.95;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+
+.container-fluid .card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 560px;
+    transition: 0.4s all ease-in-out;
+    overflow: hidden;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 8px 0;
+    background-color: #050045;
+    border-top: 7px solid #ffc107;
+}
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer ul li img {
+    width: 46px;
+}
+.footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+}
